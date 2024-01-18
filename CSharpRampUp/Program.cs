@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-               
+            /*
             Console.Write("Weight in Pounds (lb) >> ");
             double pounds = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Weight in Pounds (lb): {0}", pounds);
@@ -22,7 +22,7 @@
             Console.WriteLine("Temperature in Farenheit (°F): {0}", temp);
             Console.WriteLine("Temperature in Celsius (°C): " + (temp - 32) * 0.5555555556);
             Console.WriteLine("=================================");
-
+            */
             int count = 1;
             double sum = 0;
             double[] students = new double[10];
@@ -30,6 +30,11 @@
             Console.Write($"Enter Age for student #{count+i} >> ");
             students[i] = Convert.ToDouble(Console.ReadLine());
             sum += students[i];
+            }
+            for(int i = 0; i < students.Length;i++)
+            {
+            Console.WriteLine("Display the ages of all the students:", students[i]);
+
             }
             Console.WriteLine("The average age of the students is: "+sum/students.Length);
             Console.Write("=================================");
