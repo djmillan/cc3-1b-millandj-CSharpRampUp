@@ -1,4 +1,4 @@
-﻿namespace csharprampup
+﻿namespace CSharpRampUp
 {
     internal class Program
     {
