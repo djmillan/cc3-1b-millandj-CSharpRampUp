@@ -4,7 +4,6 @@ namespace CSharpRampUp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(byte.MaxValue);
             Console.Write("Weight in Pounds (lb) >> ");
             double pounds = double.Parse(Console.ReadLine()); //receive input into variable
             Console.WriteLine("Weight in Pounds (lb): {0}", pounds); //String interpolation
@@ -18,15 +17,15 @@ namespace CSharpRampUp
             Console.WriteLine("=================================");
 
             Console.Write("Enter temperature in Fahrenheit (°F) >> ");
-            double temp = double.Parse(Console.ReadLine()); //hypothesis to save memory usage using parse
+            double temp = double.Parse(Console.ReadLine()); 
             Console.WriteLine("Temperature in Farenheit (°F): {0}", temp);
             Console.WriteLine("Temperature in Celsius (°C): " + (temp - 32) * 0.5555555556);
             Console.WriteLine("=================================");
             
-            short count = 1; //trying something new why not short
+            int count = 1; 
             double sum = 0;
-            short[] students = new short[10]; //initialized an object with the same values, total of 10 values, no curly bracues because user will add it
-            foreach (short student in students)
+            int[] students = new int[10]; //initialized an object with the same values, total of 10 values, no curly bracues because user will add it
+            foreach (int student in students)
             {
                 Console.Write($"Enter Age for student {count + student} >> ");
                 students[student] = short.Parse(Console.ReadLine());
@@ -37,7 +36,7 @@ namespace CSharpRampUp
                 Console.WriteLine($"Age of student {count++}: " + i);
             }
             Console.WriteLine("Ages of all students:");
-            Console.WriteLine("The average age of the students is: " + sum / students.Length); //explicit type conversion(type castling), instead of implicitly converting it I just did this for simplicity
+            Console.WriteLine("The average age of the students is: " + sum / students.Length); 
             Console.Write("=================================");
             
             String[] Cnames = { "Charles", "Dave", "Juliet", "Jack", "Steve" };
@@ -57,9 +56,9 @@ forces threatening their homeland, the party uncovered an artifact of immense po
             Console.WriteLine("=================================");
             
             Console.Write("Enter a pattern number >> ");
-            int pattern1 = int.Parse(Console.ReadLine()); //In terms of memory usage maybe the user might choose 2billion in addition im not worried about disk space
+            int pattern1 = int.Parse(Console.ReadLine()); 
 
-            if(pattern1 <= 0) //scope, if user input a negative numeric or 0 this will run
+            if(pattern1 <= 0) //scope, if user input a negative numeric or 0 
             {
                 Console.WriteLine("Invalid input");
             } else // else this runs
