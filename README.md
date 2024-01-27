@@ -6,7 +6,7 @@ namespace CSharpRampUp
         {
             Console.Write("Weight in Pounds (lb) >> ");
             double pounds = double.Parse(Console.ReadLine()); //receive input into variable
-            Console.WriteLine("Weight in Pounds (lb): {0}", pounds); //String interpolation
+            Console.WriteLine("Weight in Pounds (lb): {0}", pounds); //Comosite foratting
             Console.WriteLine("Weight converted to Kilograms (kg): " + pounds * 0.45359237);
             Console.WriteLine("=================================");
 
